@@ -11,13 +11,13 @@ export const FontStyle = {
         fontFamily: 'SUITE-Bold',
         lineHeight: '40px',
     },
-    HeadingSemiBold: {
+    HeadingSemiBold18: {
         fontWeight: 600,
         fontSize: '18px',
         fontFamily: 'SUITE-SemiBold',
         lineHeight: '28px',
     },
-    HeadingBold: {
+    HeadingBold18: {
         fontWeight: 700,
         fontSize: '18px',
         fontFamily: 'SUITE-Bold',
