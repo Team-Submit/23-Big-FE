@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { FontStyle } from "../styles/fonts";
+import { FontStyle } from "../../styles/fonts";
 
 interface TxtProps {
     typography: keyof typeof FontStyle;
