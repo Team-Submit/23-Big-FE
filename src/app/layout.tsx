@@ -1,22 +1,27 @@
-import '../styles/globals.css'
-import type { Metadata } from 'next'
+
+import "../styles/globals.css";
+import type { Metadata } from "next";
+import StyledComponentsRegistry from "../lib/registry";
 
 export const metadata: Metadata = {
-  title: '대마켓',
-  description: '어서오세요! 대마켓에!!',
-}
+  title: "대마켓",
+  description: "어서오세요! 대마켓에!!",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="ko">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./favicon.ico" type="image/x-icon"/> 
       </head>
-      <body>{children}</body>
+      <body>
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      </body>
     </html>
-  )
+  );
 }
